@@ -6,11 +6,11 @@ import { useState } from "react";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-30 bg-white/75 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-sm ring-1 ring-zinc-200">
+    <header className="sticky top-0 z-30 bg-white/75 backdrop-blur supports-backdrop-filter:bg-white/60 shadow-sm ring-1 ring-zinc-200">
       <nav className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4 sm:h-16">
         <Link href="/" className="flex items-center gap-2 font-semibold text-blue-700">
           <Image src="/globe.svg" alt="CampusConnect" width={20} height={20} priority />
-          <span className="bg-gradient-to-r from-blue-700 to-sky-600 bg-clip-text text-transparent">CampusConnect</span>
+          <span className="bg-linear-to-r from-blue-700 to-sky-600 bg-clip-text text-transparent text-xl custom-font tracking-tight">CampusConnect</span>
           <span className="rounded-full bg-blue-100 px-2 text-xs text-blue-700">Beta</span>
         </Link>
 
