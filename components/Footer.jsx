@@ -10,7 +10,7 @@ export default function Footer() {
             <Link href="#info" className="hover:text-zinc-900">Campus Info</Link>
             <Link href="#policies" className="hover:text-zinc-900">Policies</Link>
           </div>
-          <p className="text-sm text-zinc-500 md:w-auto w-60 md:m-0 m-auto">© 2025 CampusConnect · go-to student portal</p>
+          <p className="text-sm text-zinc-500 sm:w-auto w-74 sm:m-0 m-auto">© 2025 CampusConnect · go-to student portal</p>
         </div>
       </div>
     </footer>

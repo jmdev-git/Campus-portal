@@ -1,10 +1,15 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
   return (
     <header className="sticky top-0 z-30 bg-white/75 backdrop-blur supports-backdrop-filter:bg-white/60 shadow-sm ring-1 ring-zinc-200">
       <nav className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4 sm:h-16">
@@ -37,11 +42,11 @@ export default function Navbar() {
       {open && (
         <div className="sm:hidden">
           <div className="mx-4 mb-3 grid gap-1 rounded-md border border-zinc-200 bg-white/95 p-2 shadow-sm">
-            <Link href="/" className="rounded-md px-3 py-2 text-sm font-medium text-zinc-800 hover:bg-zinc-100">Home</Link>
-            <Link href="/dashboard" className="rounded-md px-3 py-2 text-sm font-medium text-zinc-800 hover:bg-zinc-100">Dashboard</Link>
-            <Link href="/dashboard#courses" className="rounded-md px-3 py-2 text-sm font-medium text-zinc-800 hover:bg-zinc-100">Courses</Link>
-            <Link href="/dashboard#profile" className="rounded-md px-3 py-2 text-sm font-medium text-zinc-800 hover:bg-zinc-100">Profile</Link>
-            <Link href="/login" className="rounded-full bg-blue-600 px-3 py-2 text-sm font-semibold text-white hover:bg-blue-700">Login</Link>
+            <Link href="/" onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium text-zinc-800 hover:bg-zinc-100">Home</Link>
+            <Link href="/dashboard" onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium text-zinc-800 hover:bg-zinc-100">Dashboard</Link>
+            <Link href="/dashboard#courses" onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium text-zinc-800 hover:bg-zinc-100">Courses</Link>
+            <Link href="/dashboard#profile" onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium text-zinc-800 hover:bg-zinc-100">Profile</Link>
+            <Link href="/login" onClick={() => setOpen(false)} className="rounded-full bg-blue-600 px-3 py-2 text-sm font-semibold text-white hover:bg-blue-700">Login</Link>
           </div>
         </div>
       )}

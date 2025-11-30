@@ -40,11 +40,11 @@ export default function DashboardPage() {
     <div className="py-8 sm:py-10">
       {/* Profile */}
       <section id="profile" className="rounded-xl border border-zinc-200 bg-white p-6 shadow-sm">
-        <h1 className="text-2xl font-bold text-zinc-900 md:text-left text-center">Student Profile</h1>
+        <h1 className="text-2xl font-bold text-zinc-900 md:text-left text-center custom-font tracking-tight">Student Profile</h1>
         <div className="mt-3 flex md:flex-row flex-col md:items-start items-center gap-3">
-          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-100 text-base font-bold text-blue-700">KWM</div>
+          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-100 text-base font-bold text-blue-700 tracking-tight shadow-sm">KWM</div>
           <div className="text-center md:text-left">
-            <p className="text-lg font-semibold text-zinc-900">Kenneth William Sareno</p>
+            <p className="text-lg font-semibold text-zinc-900 tracking-tight">Kenneth William Sareno</p>
             <p className="text-sm text-zinc-700">BS Information Technology · Fourth Year</p>
             <div className="mt-2 flex flex-wrap md:justify-start justify-center md:justify-left gap-2">
               <span className="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-xs text-zinc-700">ID: 22-LN-3926</span>

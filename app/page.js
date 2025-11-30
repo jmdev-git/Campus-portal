@@ -6,7 +6,7 @@ export default function Home() {
     <div className="py-8 sm:py-12">
       {/* Hero */}
       <section className="grid items-center gap-6 rounded-2xl bg-linear-to-br from-blue-600 to-sky-500 p-6 text-white shadow-lg ring-1 ring-white/20 sm:grid-cols-2 sm:p-8">
-        <div className="order-2 sm:order-1 md:text-left text-center">
+        <div className="order-2 sm:order-1 sm:text-left text-center">
           <h1 className="text-3xl font-bold sm:text-4xl custom-font">
             Learn. Explore. Connect.
           </h1>
@@ -44,7 +44,7 @@ export default function Home() {
 
       {/* About */}
       <section className="mt-8 grid gap-4 rounded-2xl border border-zinc-200 bg-white/90 p-6 shadow-sm backdrop-blur sm:grid-cols-3 sm:p-8">
-        <div className="sm:col-span-2 md:text-left text-center">
+        <div className="sm:col-span-2 sm:text-left text-center">
           <h2 className="text-xl font-semibold text-zinc-900">
             About CampusConnect
           </h2>

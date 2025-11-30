@@ -32,7 +32,7 @@ export default function LoginPage() {
             />
           </div>
 
-          <button type="submit" className="inline-flex min-h-12 items-center justify-center rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-700">
+          <button type="submit" className="inline-flex cursor-pointer min-h-12 items-center justify-center rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-700">
             Login
           </button>
           <p className="text-xs text-zinc-600">This demo is static—submitting navigates to the dashboard.</p>
